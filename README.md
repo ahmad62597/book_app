@@ -4,15 +4,14 @@ Heroku Deployment: https://aa-mk-booklist.herokuapp.com
 
 Number and name of feature: _Feature 1: Server-side rendering_______________________________
 
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: __1hr_
 
-Start time: _____
+Start time: ___0930__
 
-Finish time: _____
+Finish time: __1215___
 
-Actual time needed to complete: _____
+Actual time needed to complete: __2hr 45min___
 
-Number and name of feature: ________________________________
 
 ### Feature 1: Server-side rendering
 
@@ -35,9 +34,10 @@ Then the index should load without a flash of unstyled content (FOUC)
 - Create a basic HTML scaffold in your `index.ejs` file which contains several elements that you can view in the browser, such as a heading element that says "Hello World". Also create a basic CSS file with several rules, such as an obvious background color. These will serve as our "proof of life" that the files are connected as expected, both locally and when deployed.
 - For testing purposes, include a temporary route such as `app.get('/hello')` and render your `index.ejs` file. Turn on your server and validate that the HTML elements and basic CSS styles are being rendered as expected. This route will be useful in the future if you ever need to test your application without relying on data from a database.
 
-Estimate of time needed to complete: _____
+Number and name of feature: __Feature 2: Search the Google Books API_____________________________
+Estimate of time needed to complete: _1hr____
 
-Start time: _____
+Start time: __1240___
 
 Finish time: _____
 
