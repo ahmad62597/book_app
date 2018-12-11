@@ -1,0 +1,25 @@
+header {
+  background-color: #cccccc;
+  width: 100vw;
+  height: 15vw;
+}
+#head1 {
+  background-color: #000000;
+  width: 100vw;
+  height: 10vw;
+}
+#head2 {
+  background-color: #595959;
+  width: 100vw;
+  height: 5vw;
+}
+main {
+  background-color: #808080;
+  width: 100vw;
+  height: 75vw;
+}
+footer {
+  background-color: #000000;
+  width: 100vw;
+  height: 10vw;
+}
