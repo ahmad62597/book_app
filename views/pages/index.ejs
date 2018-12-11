@@ -9,11 +9,32 @@
 </head>
 <body>
   <header>
-    <div id="head1"></div>
-    <div id="head2"></div>
+    <div id="head1">
+      <h1>Best Books!</h1>
+    </div>
+    <div id="head2">
+      <h2>Search by Title or Author</h2>
+    </div>
   </header>
   <main>
-    <p>Hello World!</p>
+    <div id="form">
+      <form action="/bookSearch">
+        <div id="searchBx">
+          <input type="textz" name="searchArea" />
+        </div>
+        <div id="searchRdo">
+          <div id="title">
+            Title<input type="radio" name="searchType" value="title" />
+          </div>
+          <div id="author">
+            Author<input type="radio" name="searchType" value="author" />
+          </div>
+          <div id="searchBtn">
+            Search the Google Books API
+          </div>
+        </div>
+      </form>
+    </div>
   </main>
   <footer></footer>
   <script src="../../server.js"></script>
