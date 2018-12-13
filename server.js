@@ -4,7 +4,8 @@ const express = require('express');
 const app = express();
 const PORT = process.env.PORT || 3000;
 const superagent = require('superagent');
-
+const pg = require ('pg')
+require ('dotenv').config();
 
 // const main = requires('/script/main.js')
 
@@ -12,9 +13,17 @@ app.set('view engine', 'ejs');
 app.use(express.static('public'));
 
 
-app.get('/', (request, response) => {
-  response.render('../views/pages/index');
-});
+app.get('/', getBooks); //run function getBooks on homepage
+// app.get('/', )
+// app.post()
+// app.get()
+
+
+//Setup connection to DB
+const client = new pg.Client('postgress://ahmad:postgress@localhost:5432/bookapp');
+client.connect();
+client.on('error', err => console.error(err));
+
 
 
 function getBooks (req, res) {
@@ -47,5 +56,5 @@ function errorHandler (err, res) {
 
 
 app.listen(PORT, () => {
-  console.log(`listening on the coolest port: ${PORT}`);
+  console.log(`listening on the dumbest port: ${PORT}`);
 })
